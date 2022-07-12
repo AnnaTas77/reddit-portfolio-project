@@ -3,5 +3,8 @@ import subredditReducer from "./features/subreddit/subredditSlice.js";
 
 
 export const store = configureStore({
-    reducer: { subreddit: subredditReducer }
-});
+    reducer: {
+        subreddit: subredditReducer
+
+    }
+}); 

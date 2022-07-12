@@ -1,19 +1,23 @@
 import React from 'react';
 import './navbar.css';
-import { RiMenu3Line, RiCloseLin } from 'react-icons/ri';
 import logo from '../../assets/logo.png'
+
+import { useSelector } from 'react-redux'
 
 
 const Navbar = () => {
+
+    // console.log(useSelector((state) => console.log(state)))
+
     return (
-        <div className='nav-container'>
+        <nav className='nav-container'>
             <div className='nav-logo'>
                 <img src={logo} alt='logo' />
             </div>
             <div className='website-name'>
                 Redditophilia
             </div>
-        </div>
+        </nav>
     )
 }
 

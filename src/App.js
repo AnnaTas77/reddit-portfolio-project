@@ -1,5 +1,5 @@
 import React from 'react';
-import { Article, Navbar, Search, Subreddit } from './components';
+import { Article, Navbar, Search, SubredditContainer } from './components';
 import './App.css';
 
 function App() {
@@ -10,9 +10,9 @@ function App() {
         {/* <Header /> */}
       </div>
       <div className='subreddits-container'>
-        <Subreddit defaultSubreddit={"frontend"} />
-        <Subreddit defaultSubreddit={"webdev"} />
-        <Subreddit defaultSubreddit={"programming"} />
+        <SubredditContainer defaultSubreddit={"frontend"} />
+        <SubredditContainer defaultSubreddit={"webdev"} />
+        <SubredditContainer defaultSubreddit={"programming"} />
       </div>
 
     </div >
